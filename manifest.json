@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Canonical Finder",
+  "description": "Canonical URL Finder",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "icons": {
+   "16": "icon.png",
+   "48": "icon.png",
+   "128": "icon.png"
+  },
+  "permissions": [
+   "activeTab",
+    "storage"
+   ],
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["scripts.js"]
+  }
+  ]
+}
