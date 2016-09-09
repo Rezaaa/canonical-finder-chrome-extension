@@ -1,0 +1,1 @@
+# canonical-finder-chrome-extention
